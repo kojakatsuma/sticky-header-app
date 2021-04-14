@@ -4,8 +4,8 @@ export const StickyHeader = (defaultSticky = false) => {
 
     const [isSticky, setIsSticky] = useState(defaultSticky)
     const tableRef = useRef<HTMLTableElement | null>(null)
-    const toggleSticky = useCallback(({ top, bottom }) => {
-        if (top <= 0 && bottom > 2 * 68) {
+    const toggleSticky = useCallback(({ top }) => {
+        if (top < 0) {
             !isSticky && setIsSticky(true)
             return;
         }
