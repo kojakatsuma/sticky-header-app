@@ -1,13 +1,86 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p {
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: #185c0f;
+}
+
+th {
+  padding: 25px 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+th:last-child {
+  width: 100px;
+}
+
+tbody tr:nth-last-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+td {
+  font-size: 18px;
+  padding: 25px 0;
+}
+
+.country:hover {
+  border: 1px solid teal;
+}
+
+td:last-child {
+  font-size: 30px;
+}
+
+.country-details {
+  background-color: teal;
+  color: #f3f3f3;
+  border-radius: 0.8rem;
+  width: 300px;
+  position: fixed;
+  bottom: 5vh;
+  right: 10px;
+  transform: scale(0.8);
+}
+
+.container {
+  display: flex;
+  margin-bottom: -1.5rem;
+  margin-left: 1.3rem;
+} 
+
+
+[alt="country-flag"] {
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.country-description {
+  padding-bottom: 1rem;
+  font-size: 0.99rem;
 }
